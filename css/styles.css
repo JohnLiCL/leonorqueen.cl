@@ -38,6 +38,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 body {
@@ -654,17 +655,11 @@ footer p {
    Responsive Design
    ========================================================================= */
 @media (max-width: 991px) {
-    .hero-title { font-size: 4rem; }
-    .section-heading { font-size: 2.5rem; }
-    .contact-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 768px) {
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%;
-        width: 100%; /* Full width for better mobile experience */
+        right: 0;
+        width: 100%;
         height: 100vh;
         background: rgba(10, 10, 10, 0.98);
         backdrop-filter: blur(15px);
@@ -673,20 +668,21 @@ footer p {
         justify-content: center;
         align-items: center;
         gap: 2.5rem;
-        transition: all 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
-        z-index: 2000; /* High, but lower than WhatsApp button (999999) */
+        transform: translateX(100%); /* Use transform instead of right to avoid overflow */
+        transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+        z-index: 2000;
         visibility: hidden;
         opacity: 0;
     }
     
     .nav-links.active {
-        right: 0;
+        transform: translateX(0);
         visibility: visible;
         opacity: 1;
     }
 
     .nav-links a:not(.btn) {
-        font-size: 1.5rem; /* Larger links on mobile */
+        font-size: 1.5rem;
     }
     
     .mobile-menu-toggle {
@@ -695,10 +691,17 @@ footer p {
         position: relative;
     }
     
-    .hero-title { font-size: 2.8rem; }
+    .hero-title { font-size: 2.8rem; word-break: break-word; }
+    .section-heading { font-size: 2.5rem; }
+    .contact-grid { grid-template-columns: 1fr; }
     .about .row { flex-direction: column; }
     .experience-badge { right: 0; bottom: 0; width: 110px; height: 110px; font-size: 0.85rem; }
     .cta-banner h2 { font-size: 2.2rem; }
+}
+
+/* Remove old 768px media query content that is now handled in 991px */
+@media (max-width: 768px) {
+
 
     /* Ensure WhatsApp button is visible and properly sized on mobile */
     .whatsapp-float {
