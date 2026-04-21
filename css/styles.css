@@ -570,16 +570,16 @@ footer p {
     right: 30px;
     background-color: #25d366;
     color: #fff;
-    border-radius: 50px;
+    border-radius: 50%;
     text-align: center;
     font-size: 35px;
-    z-index: 9999;
-    display: flex;
+    z-index: 999999; /* Increased z-index */
+    display: flex !important; /* Force display */
     align-items: center;
     justify-content: center;
     width: 65px;
     height: 65px;
-    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     transition: var(--transition);
     animation: bounce 2s infinite;
 }
@@ -682,4 +682,17 @@ footer p {
     .about .row { flex-direction: column; }
     .experience-badge { right: 0; bottom: 0; width: 120px; height: 120px; font-size: 0.9rem; }
     .cta-banner h2 { font-size: 2.5rem; }
+
+    /* Ensure WhatsApp button is visible and properly sized on mobile */
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+    
+    .whatsapp-tooltip {
+        display: none; /* Hide tooltip on mobile to avoid overlap/touch issues */
+    }
 }
