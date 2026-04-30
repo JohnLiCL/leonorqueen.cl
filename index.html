@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leonor Queen - Especialistas en Manicure Rusa y Nail Art en Puente Alto</title>
+    <title>Microblading & Manicure Rusa en Puente Alto | Leonor Queen</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Leonor Queen: Salón especializado en manicure rusa, esmaltado permanente, acrílicos, microblading, micropigmentación de labios y delineado permanente. Reserva tu hora en Puente Alto.">
+        content="Especialistas en Microblading, micropigmentación de labios y delineado permanente en Puente Alto. También manicure rusa, esmaltado permanente y nail art. Agenda tu hora hoy — Av. San Carlos 505, Puente Alto.">
     <meta name="keywords"
-        content="manicure, nail art, puente alto, manicure rusa, esmaltado permanente, uñas acrilicas, academia manicure, microblading, micropigmentacion labios, delineado permanente, tatuaje cosmetico, belleza, santiago">
+        content="microblading puente alto, microblading santiago, micropigmentacion labios puente alto, delineado permanente puente alto, tatuaje cosmetico, manicure rusa puente alto, nail art puente alto, esmaltado permanente, uñas acrilicas puente alto, academia manicure, belleza puente alto, leonor queen">
     <meta name="author" content="Leonor Queen">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://leonorqueen.cl/">
 
     <!-- Open Graph for Social Media -->
-    <meta property="og:title" content="Leonor Queen - Manicure y Academia en Puente Alto">
+    <meta property="og:title" content="Microblading & Manicure Rusa en Puente Alto | Leonor Queen">
     <meta property="og:description"
-        content="Salón de manicure exclusivo en Puente Alto. Especialistas en acrílico, esmaltado permanente y diseños a mano alzada.">
+        content="Especialistas en microblading, micropigmentación de labios y manicure rusa en Puente Alto. Resultados naturales y duraderos. ¡Agenda tu hora hoy!">
     <meta property="og:image" content="https://leonorqueen.cl/images/logo-leonorqueen.png">
     <meta property="og:url" content="https://leonorqueen.cl/">
     <meta property="og:type" content="website">
@@ -27,17 +27,20 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "NailSalon",
-      "name": "Leonor Queen Manicure",
-      "description": "Salón de manicure y nail art en Puente Alto. Especialistas en manicure rusa, esmaltado permanente, acrílicos, microblading, micropigmentación de labios y delineado de ojos permanente.",
+      "@type": "BeautySalon",
+      "name": "Leonor Queen",
+      "description": "Especialistas en microblading, micropigmentación de labios, delineado de ojos permanente y manicure rusa en Puente Alto, Santiago. Técnicas de vanguardia y resultados naturales duraderos.",
       "url": "https://leonorqueen.cl",
       "telephone": "+56971370411",
       "email": "leonorqueen.cl@gmail.com",
+      "image": "https://leonorqueen.cl/images/logo-leonorqueen.png",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Av. San Carlos 505",
         "addressLocality": "Puente Alto",
         "addressRegion": "Región Metropolitana",
+        "postalCode": "8150000",
         "addressCountry": "CL"
       },
       "geo": {
@@ -45,6 +48,24 @@
         "latitude": -33.5988,
         "longitude": -70.5843
       },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Belleza",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microblading" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Micropigmentación de Labios" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Delineado de Ojos Permanente" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Manicure Rusa" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Esmaltado Permanente" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nail Art Avanzado" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acrílicas y Gel" } }
+        ]
+      },
+      "sameAs": [
+        "https://www.instagram.com/leonor.queen/",
+        "https://www.instagram.com/leonorqueen.microbladingchile/",
+        "https://www.facebook.com/leonor.queen"
+      ],
       "openingHoursSpecification": [
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "20:00" },
         { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "13:00" }
@@ -59,21 +80,24 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome no bloqueante -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 </head>
 
 <body>
 
     <!-- WhatsApp Floating Button (Forzado con estilos inline para evitar conflictos) -->
     <a href="https://api.whatsapp.com/send?phone=56971370411&text=Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20hora."
-        class="whatsapp-float" 
-        target="_blank" 
-        aria-label="Chat en WhatsApp"
-        style="position: fixed !important; bottom: 30px !important; right: 30px !important; width: 65px !important; height: 65px !important; background-color: #25d366 !important; color: white !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; z-index: 999999 !important; font-size: 35px !important; box-shadow: 0 4px 15px rgba(0,0,0,0.5) !important; text-decoration: none !important;">
+        class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp"
+        style="position: fixed !important; bottom: 30px !important; right: 30px !important; width: 65px !important; height: 65px !important; background-color: #25d366 !important; color: white !important; border-radius: 50% !important; display: flex !important; align-items: center !important; justify-content: center !important; z-index: 999999 !important; font-size: 35px !important; box-shadow: 0 4px 15px rgba(0,0,0,0.5) !important; text-decoration: none !important;"
+        rel="noopener noreferrer">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
@@ -81,7 +105,8 @@
     <header class="header shrinkable">
         <div class="nav-container">
             <a href="#" class="logo">
-                <img src="images/logo-leonorqueen.png" alt="Leonor Queen Logo">
+                <img src="images/logo-leonorqueen.png" alt="Leonor Queen - Microblading y Manicure Rusa Puente Alto"
+                    loading="eager">
             </a>
             <button class="mobile-menu-toggle" aria-label="Abrir Menú">
                 <i class="fa-solid fa-bars"></i>
@@ -93,7 +118,7 @@
                 <a href="#gallery">Galería</a>
                 <a href="#contact">Contacto</a>
                 <a href="https://api.whatsapp.com/send?phone=56971370411&text=Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20hora."
-                    target="_blank" class="btn btn-primary nav-btn">Reserva tu hora</a>
+                    target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-btn">Reserva tu hora</a>
             </nav>
         </div>
     </header>
@@ -102,11 +127,14 @@
     <section id="hero" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title reveal">El Reflejo<br><span>De Ti Misma</span></h1>
-            <p class="hero-subtitle reveal delay-1">Diseños exclusivos, manicure rusa y atención personalizada en Puente
-                Alto.</p>
+            <img src="images/logo-leonorqueen.png" alt="Leonor Queen Logo" class="hero-logo reveal">
+            <h1 class="hero-title reveal">Microblading &<br><span>Manicure Rusa</span></h1>
+            <p class="hero-subtitle reveal delay-1">Especialistas en maquillaje semipermanente y nail art en Puente
+                Alto.
+                Despierta perfecta, todos los días.</p>
             <a href="https://api.whatsapp.com/send?phone=56971370411&text=Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20hora."
-                target="_blank" class="btn btn-primary btn-large reveal delay-2">Agenda tu Cita</a>
+                target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large reveal delay-2">Agenda tu
+                Cita</a>
         </div>
     </section>
 
@@ -115,7 +143,9 @@
         <div class="container row">
             <div class="col img-col reveal-left">
                 <div class="img-wrapper">
-                    <img src="images/about.jpg" alt="Leonor Queen Trabajo">
+                    <img src="images/about.jpg"
+                        alt="Trabajo de microblading y manicure rusa en Leonor Queen Puente Alto" width="600"
+                        height="450" loading="lazy">
                     <div class="experience-badge">
                         <span>Experiencia &<br>Calidad</span>
                     </div>
@@ -124,12 +154,14 @@
             <div class="col content-col reveal-right">
                 <h2 class="section-heading">Acerca de <span>Nuestro Salón</span></h2>
                 <div class="divider"></div>
-                <p>Bienvenidos a Leonor Queen ® Manicure, un salón orientado a la exclusividad y calidad, con un sello
-                    artístico basado en los diseños a mano alzada.</p>
-                <p>Mi nombre es Leonor, fui diseñadora gráfica antes de descubrir el mundo de la manicure. El objetivo
-                    es siempre dejar las manos hermosas y únicas, con mucha dedicación.</p>
-                <p>Desde esmaltados permanentes hasta trabajos de gran complejidad como acrílicos y encapsulados,
-                    nuestra misión siempre es destacar en los detalles.</p>
+                <p>Bienvenidos a Leonor Queen ® — salón de belleza en Puente Alto especializado en
+                    <strong>microblading</strong>, <strong>micropigmentación de labios</strong>, <strong>delineado
+                        permanente</strong> y <strong>manicure rusa</strong>.
+                </p>
+                <p>Mi nombre es Leonor, fui diseñadora gráfica antes de descubrir el mundo de la belleza. Esa mirada
+                    artística es lo que hace únicos nuestros resultados: naturales, simétricos y duraderos.</p>
+                <p>Desde esmaltados permanentes hasta trabajos de micropigmentación de alta precisión, nuestra misión
+                    siempre es destacar en los detalles y hacer que te enamores del espejo.</p>
                 <a href="#services" class="btn btn-outline" style="margin-top: 20px;">Ver Especialidades <i
                         class="fa-solid fa-arrow-right"></i></a>
             </div>
@@ -173,19 +205,20 @@
                     <h3>Esmaltado Permanente</h3>
                     <p>Colores vibrantes y brillos espectaculares de larga duración cuidando la uña natural.</p>
                 </div>
-                <!-- Service 7 -->
                 <div class="service-card reveal">
                     <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
-                    <h3>Microblading</h3>
-                    <p>Técnica de definición de cejas pelo a pelo para un resultado natural, simétrico y duradero. Ideal
-                        para rellenar zonas sin densidad o rediseñar la forma.</p>
+                    <h3>Microblading en Puente Alto</h3>
+                    <p>Definición de cejas pelo a pelo con resultados naturales, simétricos y de larga duración. Ideal
+                        para rellenar zonas sin densidad, corregir forma o recuperar cejas. Técnica semipermanente con
+                        hasta 2 años de duración.</p>
                 </div>
                 <!-- Service 8 -->
                 <div class="service-card reveal delay-1">
                     <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
                     <h3>Micropigmentación de Labios</h3>
-                    <p>Define, rellena y colorea tus labios de forma permanente. Despierta con un look impecable y una
-                        sonrisa radiante sin necesidad de maquillaje.</p>
+                    <p>Define, rellena y colorea tus labios de forma permanente en Puente Alto. Despierta con un look
+                        impecable y una sonrisa radiante sin necesidad de maquillaje. Resultado natural desde el primer
+                        día.</p>
                 </div>
                 <!-- Service 9 -->
                 <div class="service-card reveal delay-2">
@@ -204,10 +237,10 @@
         <div class="container text-center relative z-10">
             <h2>Descubre Nuestra Magia en Instagram</h2>
             <p>Sigue nuestros últimos trabajos, diseños increíbles y promociones diarias.</p>
-            <a href="https://www.instagram.com/leonor.queen/" target="_blank" class="btn btn-primary btn-large mt-4"><i
-                    class="fa-brands fa-instagram"></i> leonor.queen</a>
+            <a href="https://www.instagram.com/leonor.queen/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-primary btn-large mt-4"><i class="fa-brands fa-instagram"></i> leonor.queen</a>
             <p></p>
-            <a href="https://www.instagram.com/leonorqueen.microbladingchile/" target="_blank"
+            <a href="https://www.instagram.com/leonorqueen.microbladingchile/" target="_blank" rel="noopener noreferrer"
                 class="btn btn-primary btn-large mt-4"><i class="fa-brands fa-instagram"></i>
                 Microblading</a>
         </div>
@@ -263,14 +296,14 @@
     <!-- Footer -->
     <footer>
         <div class="container footer-content text-center">
-            <img src="images/logo-leonorqueen.png" alt="Leonor Queen" class="footer-logo">
+            <img src="images/logo-leonorqueen.png" alt="Leonor Queen" class="footer-logo" loading="lazy">
             <div class="social-links">
-                <a href="https://www.instagram.com/leonor.queen/" target="_blank" aria-label="Instagram"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/leonor.queen" target="_blank" aria-label="Facebook"><i
-                        class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=56971370411" target="_blank" aria-label="WhatsApp"><i
-                        class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/leonor.queen/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/leonor.queen" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=56971370411" target="_blank" rel="noopener noreferrer"
+                    aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <p>&copy; <span id="year"></span> Leonor Queen®. Todos los derechos reservados. Puente Alto, Chile.</p>
         </div>
